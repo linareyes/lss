@@ -1,0 +1,24 @@
+#main {
+  border:1px solid red;
+  width: 800px;
+  height: 10000px;
+  margin: 0 auto;
+
+}
+
+#counter {
+  height:30px;
+  width:80px;
+  line-height: 30px;
+  border: 1px solid blue;
+  position: fixed;
+  top:0;
+  left:0;
+  color: white;
+  font-family: verdana, sans-serif;
+  font-weight: 900;
+  background-color: navy;
+
+
+
+}
