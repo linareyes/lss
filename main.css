@@ -1,24 +1,139 @@
-#main {
-  border:1px solid red;
-  width: 800px;
-  height: 10000px;
-  margin: 0 auto;
+html, body{
+height:100%;
+margin:0;
+padding:0;
+}
+
+
+
+#main{
+width:10000px;
+height:100%;
+position: relative;
+bottom:0;
+/* https://cssgradient.io/
+background: rgb(60,118,153);
+background: linear-gradient(180deg, rgba(2,0,36,100) 30%, rgba(60,118,153,100) 81%, rgba(60,118,153,100) 83%, rgba(60,118,153,100) 89%); */
+background:black;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+ white-space: nowrap;
+}
+
+.scrolling-wrapper {
+  height: 100%;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
+  border: 1px solid blue;
+  width: 1250px;
+  height: 710px;
+  display: inline-block;
 
 }
 
-#counter {
-  height:30px;
-  width:80px;
-  line-height: 30px;
-  border: 1px solid blue;
-  position: fixed;
-  top:0;
-  left:0;
-  color: white;
-  font-family: verdana, sans-serif;
-  font-weight: 900;
-  background-color: navy;
+
+
+.card1 {
+  background-image: url("./images/1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.card2 {
+  position: absolute;
+  background-image: url(".images/10.png"), url("./images/2.png");
+  background-position: bottom, top;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+
+
+}
+
+.card3 {
+  background-image: url("./images/3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.card4 {
+  background-image: url("./images/4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.card5 {
+  background-image: url("./images/5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.card6 {
+  background-image: url("./images/6.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.card7 {
+  background-image: url("./images/7.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.card8 {
+  background-image: url("./images/8.png");
+  background-size: contain, contain;
+  background-repeat: no-repeat;
+
+}
+
+.card10{
+  background-image: url(".images/10.png");
+  position:absolute;
+  left: 2000px;
+  z-index: 3;
+}
 
 
 
+
+
+
+
+
+
+
+
+#walk{
+position: fixed;
+left:800px;
+bottom:80px;
+height:238px;
+width:145px;
+background:url("./images/walkfoward.png")
+}
+
+
+.restart {
+animation: play 1s steps(10);
+}
+@keyframes play{
+from { background-position:    1414px; }
+  to { background-position: 0px; }
 }
