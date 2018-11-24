@@ -36,7 +36,6 @@ background:black;
 
 
 .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
-  border: 1px solid blue;
   width: 1250px;
   height: 710px;
   display: inline-block;
@@ -52,11 +51,9 @@ background:black;
 
 }
 .card2 {
-  position: absolute;
-  background-image: url(".images/10.png"), url("./images/2.png");
-  background-position: bottom, top;
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url("./images/2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 
 
 }
@@ -104,21 +101,89 @@ background:black;
 }
 
 .card10{
-  background-image: url(".images/10.png");
-  position:absolute;
-  left: 2000px;
-  z-index: 3;
+
+  position: relative;
+  left: 1255px;
+  top:-720px;
+  height: 710px;
+  width:1254px;
+  background-image: url("./images/10.png");
+  background-size: contain;
+  z-index: 1;
+}
+
+.card11{
+
+  position: relative;
+  left: 2500px;
+  top:-1425px;
+  height: 710px;
+  width:1250px;
+  background-image: url("./images/11.png");
+  background-size: contain;
+  z-index: 1;
+}
+
+.card12{
+
+  position: relative;
+  left: 3765px;
+  top:-2100px;
+  height: 710px;
+  width:1250px;
+  background-image: url("./images/12.png");
+  background-size: contain;
+  z-index: 1;
+}
+
+.card13{
+
+  position: relative;
+  left: 5020px;
+  top:-2830px;
+  height: 710px;
+  width:1250px;
+  background-image: url("./images/13.png");
+  background-size: contain;
+  z-index: 1;
+}
+
+.card14{
+
+  position: relative;
+  left: 6270px;
+  top:-3555px;
+  height: 710px;
+  width:1250px;
+  background-image: url("./images/14.png");
+  background-size: contain;
+  z-index: 1;
 }
 
 
+.card15{
 
+  position: relative;
+  left: 7525px;
+  top:-4260px;
+  height: 710px;
+  width:1250px;
+  background-image: url("./images/15.png");
+  background-size: contain;
+  z-index: 1;
+}
 
+.card16{
 
-
-
-
-
-
+  position: relative;
+  left: 8780px;
+  top:-4970px;
+  height: 710px;
+  width:1250px;
+  background-image: url("./images/16.png");
+  background-size: contain;
+  z-index: 1;
+}
 
 #walk{
 position: fixed;
@@ -126,7 +191,7 @@ left:800px;
 bottom:80px;
 height:238px;
 width:145px;
-background:url("./images/walkfoward.png")
+background:url("./images/walkfoward.png");
 }
 
 
