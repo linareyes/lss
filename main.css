@@ -93,7 +93,7 @@ background:black;
                     }
 
                     h1 {
-                      color: black;
+                      color: #4d3349;
                       background-color: currentColor;
                       position:relative;
                       height:710px;
@@ -105,16 +105,16 @@ background:black;
                       align-items: center;
                       font: 800 4rem Montserrat, sans-serif;
                       letter-spacing: -0.07ex;
-                      animation: anim 4s infinite alternate ease-in-out;
+                      animation: anim 4.5s infinite alternate ease-in-out;
                       z-index: 3; /*after cover*/
                     }
 
-                      @keyframes anim {
+                    @keyframes anim {
                         from {
-                          text-shadow: 0 0 40px transparent;
+                          text-shadow: 0 0 10px transparent;
                         }
                         to {
-                          text-shadow: 0 20px 55px rgba(255, 255,255, 100);
+                          text-shadow: 0 28px 80px rgba(0, 0, 0, 1);
                         }
                       }
 
@@ -146,14 +146,14 @@ background:black;
                       z-index: 4;
                       left:180px;
                       top:-630px;
-                    
+
                     }
 
 
                     .clip {
                       position: absolute;
                       transition: 0.8s ease-in-out;
-                      background: #673ab7;
+                      background: #be9ab9;
                       z-index: 5; /*cover on top*/
                       -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
                               clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
@@ -180,7 +180,7 @@ background:black;
 
 
                     .btn {
-                      background: #673ab7;
+                      background:  #be9ab9;
                       color: #fff;
                       border-radius: 4px;
                       padding: 0.75em 1em;
@@ -193,7 +193,7 @@ background:black;
                       box-shadow: 0px 0px 0px #000;
                     }
                     .btn:hover {
-                      background: #5c34a4;
+                      background: #60405c;
                       box-shadow: 2px 2px 8px 1px #000;
                       -webkit-transform: translate(0, -2px);
                               transform: translate(0, -2px);

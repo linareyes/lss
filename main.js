@@ -16,4 +16,10 @@ walk.addEventListener('animationend', stopAnimation);
 function toggle(){
   document.getElementById('clip').classList.toggle('active')
 }
- 
+
+$(document).on("ready", function() {
+    setTimeout(function() {
+        $(".letter").addClass("loaded");
+        $(".reg-text").addClass("loaded");
+    }, 1000);
+});
