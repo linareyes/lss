@@ -13,14 +13,7 @@ window.addEventListener('scroll', runAnimation);
 walk.addEventListener('animationend', stopAnimation);
 
 
-
-
-
-
-
-$(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});
+function toggle(){
+  document.getElementById('clip').classList.toggle('active')
+}
+ 
