@@ -202,10 +202,12 @@ background:black;
                       border: none;
                       box-shadow: 2px 2px 5px #666;
                       position:relative;
-                      top:-400px;
+                      top:-1000px;
                       right:-400px;
                       z-index: 4;
                     }
+
+
 
                     #clip .container {
                       transition: 0.3s ease-in-out;
@@ -252,6 +254,80 @@ background:black;
                                 transform: translate(0, 0);
                       }
                     }
+
+
+
+
+/*svg arrows*/
+.arrows {
+  width: 40px;
+  height: 45px;
+  transform: rotate(270deg);
+  position:absolute;
+  top:300px;
+  left:1180px;
+
+  z-index:4;
+
+}
+.arrows path {
+  stroke: white;
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
