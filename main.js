@@ -13,13 +13,13 @@ window.addEventListener('scroll', runAnimation);
 walk.addEventListener('animationend', stopAnimation);
 
 
-
+/*cover*/
 
 function toggle(){
   document.getElementById('clip').classList.toggle('active')
 }
 
-
+/*fireflies*/
 var canvas = document.querySelector("canvas");
 
 canvas.width = window.innerWidth;
