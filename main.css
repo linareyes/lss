@@ -124,7 +124,7 @@ background:black;
 /*btn, page movement, and audio */
 
                     .center-all {
-                      height:710px;;
+                      height:710px;
                       width:1250px;
                       display: flex;
                       justify-content: center;
@@ -721,6 +721,7 @@ height:710px;
     	30%,45%{opacity:1}
     }
 
+
 /*spider*/
 
 
@@ -825,10 +826,73 @@ height:710px;
   }
 }
 
+/*cat*/
+
+.cat {
+  position: absolute;
+  top: 75%;
+  width: calc(455 / 4 * 1px);
+  height: calc(735 / 13 * 1px);
+  background: url('http://stash.rachelnabors.com/img/codepen/tuna_sprite.png') 0 0 no-repeat;
+  background-size: 455px 735px;
+  transform: translatex(100vw);
+
+  animation: run 1s steps(11), move 15s ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes run {
+  from {
+    background-position: -341.25px 0;
+  }
+  to {
+    background-position: -341.25px -621.9230769px;
+  }
+}
 
 
+@keyframes move {
+  100% {
+    transform: translatex(-105vw);
+  }
+}
 
 
+.eleven {
+  position: absolute;
+  left: 4999px;
+top:-1px;
+  height: 710px;
+  width:1250px;
+  background-image: url("./images/11.png");
+background-size: contain;
+  z-index: 7;
+
+}
+
+.spider {
+  position: absolute;
+  left: 5020px;
+top:2px;
+  height: 710px;
+  width:1250px;
+  background-image: url("./images/spider.png");
+background-size: contain;
+  z-index: 7;
+
+}
+
+.spider2 {
+  position: absolute;
+  left: 7520px;
+top:2px;
+  height: 710px;
+  width:1250px;
+  background-image: url("./images/spider2.png");
+background-size: contain;
+  z-index: 7;
+
+}
 
 
 
@@ -878,7 +942,6 @@ height:710px;
   background-image: url("./images/3.png");
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
 .card4 {
@@ -928,18 +991,32 @@ height:710px;
   z-index:3;
 }
 
+/*trees double*/
 .card11{
 
   position: relative;
-  left: 2500px;
-  top:-1750px;
-  height: 710px;
-  width:1250px;
-  background-image: url("./images/11.png");
+  left: 2504px;
+  top:-1754px;
+  height: 720px;
+  width:1260px;
+  background-image: url("./images/10copy.png");
   background-size: contain;
   z-index: 3;
 }
 
+.gate {
+  position: absolute;
+  left: 3180px;
+top:320px;
+  height: 350px;
+  width:710px;
+  background-image: url("./images/gate.png");
+background-size: contain;
+  z-index: 2;
+
+}
+
+/*cemeteray smoke*/
 .card12{
 
   position: relative;
@@ -951,7 +1028,20 @@ height:710px;
   background-size: contain;
   z-index: 3;
 }
+/*trees flipped*/
+.copy {
+  position: absolute;
+  left: 3758px;
+top:-1px;
+  height: 710px;
+  width:1250px;
+  background-image: url("./images/10copycopy.png");
+background-size: contain;
+  z-index: 7;
 
+}
+
+/*tomb stones with smoke*/
 .card13{
 
   position: relative;
@@ -964,6 +1054,7 @@ height:710px;
   z-index: 3;
 }
 
+/*spider web*/
 .card14{
 
   position: relative;
@@ -976,7 +1067,7 @@ height:710px;
   z-index: 3;
 }
 
-
+/*grass rocks*/
 .card15{
 
   position: relative;
@@ -988,7 +1079,7 @@ height:710px;
   background-size: contain;
   z-index: 3;
 }
-
+/*grass rocks lake*/
 .card16{
 
   position: relative;
@@ -1006,9 +1097,9 @@ height:710px;
 position: fixed;
 left:900px;
 bottom:60px;
-height:238px;
-width:145px;
-background:url("./images/walkfoward.png");
+height:200px;
+width:100px;
+background:url("./images/walkingfoward2.png");
 
 }
 
@@ -1017,6 +1108,6 @@ background:url("./images/walkfoward.png");
 animation: play 1s steps(10);
 }
 @keyframes play{
-from { background-position: 1414px; }
-  to { background-position: 0px; }
+from { background-position: 0px; }
+  to { background-position: 1188px; }
 }
